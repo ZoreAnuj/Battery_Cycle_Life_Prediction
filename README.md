@@ -65,7 +65,7 @@ We have 20 charging cycles. For each cycle we have 2 features having 1000 measur
 
 ## 1. Single Time Series Regression
 
-![Single Time Series](images/single-time-series.png)
+![Single Time Series](single-time-series.png)
 
 We can think of this data as single time series, with 20 cycles and 1000 steps per cycle we have total 20000 steps. Two detail features have 1000 values for charging cycle, but 3 summary features have just one value, so we'll keep their value same for entire charging cycle (1000 steps). In total we would have 5 features per timestep and 20000 time steps.
 
@@ -75,7 +75,7 @@ The drawback of this approach is since the time series is extremely long model f
 
 ## 2. Voltage steps not time steps (Used Here)
 
-![Voltage Steps](images/voltage-steps.png)
+![Voltage Steps](voltage-steps.png)
 
 Instead of time steps we can think of data as having voltage steps. We have 1000 voltage steps in 2V-3.6V range. The values of features in each charging cycle can be interpreted as feature. This instead of seeing timeseries as `(20000 steps, 2 features)` we see it as `(1000 steps, 40 features)` this makes time series shorter and thus easier to learn. 
 
@@ -121,10 +121,10 @@ max_error                   882.436218
 observations              25830.000000
 ```
 ### Residuals Histogram
-![Train Residuals](images/lstm_model/train_residuals.png)
+![Train Residuals](train_residuals.png)
 
 ### Sample Prediction
-![Train Prediction](images/lstm_model/train_predictions.png)
+![Train Prediction](train_predictions.png)
 
 ## Validation Set
 
@@ -139,8 +139,8 @@ observations              29454.000000
 ```
 
 ### Residuals Histogram
-![Validation Residuals](images/lstm_model/val_residuals.png)
+![Validation Residuals](val_residuals.png)
 
 ### Sample Prediction
-![Validation Predictions](images/lstm_model/val_predictions.png)
+![Validation Predictions](val_predictions.png)
 
