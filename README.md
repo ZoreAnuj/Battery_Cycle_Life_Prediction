@@ -14,12 +14,6 @@ Which of these options will dominate depends on factors such as cost benefits, n
 
 # Get Started
 
-| Notebook | Colab Link | Description |
-| --- | -- | -- |
-| 01-extract-data  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/breathingcyborg/battery-cycle-life-prediction/blob/main/01-extract-data.ipynb) | Run this notebook before running other notebooks this notebook downloads data, transforms data and saves it to google drive |
-| 02-explore-data | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/breathingcyborg/battery-cycle-life-prediction/blob/main/02-explore-data.ipynb) | Understand data, understand fast charging, find good features and implementation of model used by d3batt group |
-| 03-train-voltage-as-timesteps | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/breathingcyborg/battery-cycle-life-prediction/blob/main/03-train-voltage-as-timesteps.ipynb) | make and train model that uses second modeling approach mentioned above |
-
 # Goal
 Before batteries are repaired and deployed for second use, we need information about how many cycles would this battery last. If battery is in good condition is could be used for moderate load applications otherwise it could be used for low load applications.
 
